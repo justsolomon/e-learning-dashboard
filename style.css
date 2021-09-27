@@ -46,6 +46,8 @@
   --border-radius-base: 10px;
   --border-radius-md: 16px;
   --border-radius-lg: 32px;
+  --media-desktop: "only screen and (max-width : 1200px)";
+  --media-desktop-sm: "only screen and (max-width : 1024px)";
 }
 
 /*************
@@ -322,6 +324,35 @@ img {
   border-radius: var(--border-radius-md);
 }
 
+@media only screen and (max-width: 1200px) {
+  .side-nav {
+    width: 22%;
+  }
+
+  .side-nav__link {
+    height: 42px;
+    padding-left: 20px;
+  }
+
+  .side-nav__link:hover,
+  .side-nav__link--active {
+    padding-left: 14px;
+  }
+
+  .side-nav__link-anchor {
+    font-size: var(--font-size-xs);
+  }
+
+  .side-nav__link--active .side-nav__link-anchor,
+  .side-nav__link:hover .side-nav__link-anchor {
+    font-size: var(--font-size-sm);
+  }
+
+  .side-nav__upgrade__content {
+    font-size: var(--font-size-sm);
+  }
+}
+
 /******************
   MAIN CONTENT
 ******************/
@@ -589,6 +620,33 @@ img {
   width: 35%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .main-content {
+    width: 56%;
+    padding: 20px 35px;
+  }
+
+  .main-content__section-header {
+    font-size: var(--font-size-base);
+  }
+
+  .main-content__chart {
+    height: 250px;
+  }
+
+  .main-content__chart__image {
+    width: 80%;
+    height: 100%;
+    margin: -20px 0 0 20px;
+  }
+
+  .main-content__charts-list > div:first-child .main-content__chart__image {
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+  }
+}
+
 /******************
   SIDEBAR CONTENT
 ******************/
@@ -660,7 +718,7 @@ img {
 
 .sidebar__event,
 .sidebar__activity {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .sidebar__event .document__icon-container,
@@ -697,4 +755,31 @@ img {
   flex-wrap: wrap;
   border-radius: 50%;
   background-color: var(--grey-bg-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    width: 22%;
+    padding: 20px 15px;
+  }
+
+  .sidebar__section-header__title {
+    font-size: var(--font-size-sm);
+    line-height: 20px;
+  }
+
+  .sidebar__user-avatar {
+    height: 56px;
+    width: 56px;
+  }
+
+  .sidebar__event,
+  .sidebar__activity {
+    margin-bottom: 8px;
+  }
+
+  .sidebar__message-avatar {
+    height: 42px;
+    width: 42px;
+  }
 }
