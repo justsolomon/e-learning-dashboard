@@ -151,10 +151,21 @@ body {
 
 button {
   font-family: var(--primary-font-family);
+  cursor: pointer !important;
 }
 
 img {
   object-fit: cover;
+}
+
+.icon-button {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 /******************
@@ -234,6 +245,9 @@ img {
   background-color: var(--notification-bg-color);
   height: 16px;
   width: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   border-radius: 50%;
 }
@@ -242,6 +256,7 @@ img {
   font-weight: var(--font-weight-bolder);
   font-size: var(--font-size-xxs);
   color: var(--white);
+  margin-top: 3px;
   line-height: 12px;
 }
 
@@ -382,16 +397,16 @@ img {
 
 .main-content__charts-list > div:first-child,
 .main-content__sections-list > div:first-child {
-  width: 65%;
+  width: 60%;
 }
 
 .main-content__charts-list > div:last-child,
 .main-content__sections-list > div:last-child {
-  width: 30%;
+  width: 35%;
 }
 
 .main-content__chart {
-  height: 250px;
+  height: 270px;
   background-color: var(--white);
   box-shadow: 0px 5px 20px rgba(39, 40, 53, 0.1);
   border-radius: var(--border-radius-base);
@@ -410,13 +425,21 @@ img {
   margin-bottom: 12px;
   line-height: 20px;
 }
+
 .main-content__chart .main-content__section-header {
   margin: 0;
 }
 
 .main-content__chart__image {
   width: 100%;
-  height: 0;
+  height: 78%;
+  margin-top: -10px;
+  object-fit: contain;
+}
+
+.main-content__charts-list > div:first-child .main-content__chart__image {
+  height: 85%;
+  margin-top: -35px;
 }
 
 .main-content__document {
