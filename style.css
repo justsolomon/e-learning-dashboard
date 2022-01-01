@@ -26,7 +26,7 @@
   --orange-progress-bg-color: #fff5cc;
   --orange-progress-color: #ffb200;
   --green-progress-bg-color: #d1ffdb;
-  --green-progress-color: #13c525;
+  --green-progress-color: #d1ffdb;
   --red-progress-bg-color: #ffd7d7;
   --red-progress-color: #ff4a4a;
   --gradient-bg-color: #1c4185;
@@ -404,7 +404,7 @@ img {
 .main-content__banner__text {
   width: 70%;
   font-size: var(--font-size-sm);
-  line-height: 20px;
+  line-height: 21.5px;
 }
 
 .main-content__banner__button {
